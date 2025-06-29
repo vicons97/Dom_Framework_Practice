@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3988","Make test of login successful","test","Tue Jun 24 21:15:36 EDT 2025","passed","Tue Jun 24 21:15:40 EDT 2025","","test_login","",""
