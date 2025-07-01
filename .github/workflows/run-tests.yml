@@ -10,8 +10,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
+    services:
+      xvfb:
+        image: selenium/standalone-chrome
+        ports:
+          - 4444:4444
 
     steps:
       - name: Checkout code
@@ -27,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests with Pytest + Allure
+      - name: Run tests
         run: |
           PYTHONPATH=. pytest --alluredir=allure-results
 
