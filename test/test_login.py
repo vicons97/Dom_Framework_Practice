@@ -1,8 +1,6 @@
 import allure
 import pytest
 
-
-
 @allure.title("Make test of login successful")
 @allure.severity("Critical")
 @allure.feature("Sign In")
